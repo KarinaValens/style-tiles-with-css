@@ -1,9 +1,6 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Playfair+Display&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -14,14 +11,14 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #110401;
+  --link-color: #bf472c;
+  --link-hover-color: #ffffff;
+  --color-4: #9e0409;
+  --color-5: #707070;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Playfair Display", serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
@@ -37,6 +34,7 @@ a {
 
 button:hover {
   background-color: var(--link-hover-color);
+  color: var(--link-color);
   transform: scale(3) rotate(40deg);
 }
 
@@ -197,7 +195,7 @@ button {
 }
 
 .secondary-button {
-  background: var(--color-5);
+  background: var(--bg-color);
 }
 
 button:focus,
@@ -242,6 +240,7 @@ a {
   font-weight: bold;
   text-decoration: none;
   transition: all 0.2s;
+  font-style: italic;
 }
 
 p[class*="font-details-"] {
